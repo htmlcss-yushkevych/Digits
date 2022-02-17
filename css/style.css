@@ -196,7 +196,7 @@ ul {
   color: #455880;
 }
 .benefits__line {
-  margin-top: 50px;
+  margin: 50px auto;
   width: 405px;
   border: 1px solid rgba(69, 88, 128, 0.2);
 }
@@ -204,6 +204,9 @@ ul {
 /* DESIGN */
 .design {
   background-color: #fff9ea;
+  background-image: url(../img/design/design-picture.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .design__inner {
   padding-top: 175px;
@@ -222,6 +225,7 @@ ul {
 }
 .design__button {
   margin-top: 40px;
+  margin-bottom: 575px;
   padding: 15px 40px;
   font-size: 16px;
   color: #ffffff;
@@ -237,13 +241,14 @@ ul {
   transition: all 0.3s;
 }
 .design__button:hover {
-  background: #1837fc;
+  background: #3c4bb1;
 }
 .design__image {
   position: relative;
   top: -400px;
   left: -190px;
   margin-bottom: -400px;
+  z-index: -1;
 }
 
 /* REVIEWS */
@@ -307,6 +312,9 @@ ul {
 
   color: #ffffff;
 }
+.launch__inner-contact {
+  text-align: right;
+}
 .launch__contact-button {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
@@ -337,6 +345,8 @@ ul {
   line-height: 125%;
   color: #dfe0eb;
 }
+
+/* FOOTER */
 .footer__inner {
   margin-top: 125px;
   display: flex;
@@ -345,7 +355,7 @@ ul {
 .footer__inner-logo {
   margin-bottom: 35px;
 }
-.footer_info-text {
+.footer__info-text {
   width: 310px;
   font-size: 18px;
   line-height: 145%;
@@ -365,6 +375,12 @@ ul {
   font-size: 18px;
   line-height: 225%;
   color: #455880;
+  transition: all, 0.3s;
+}
+.footer__pages-item:hover,
+.footer__demos-item:hover,
+.footer__resources-item:hover {
+  color: #ff2e6a;
 }
 
 .footer__recources-logo {
@@ -374,22 +390,21 @@ ul {
   margin-right: 0px;
 }
 .footer__additional {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: baseline;
-
   font-size: 14px;
   line-height: 27px;
   color: rgba(69, 88, 128, 0.5);
 }
 .footer__list {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: flex-end;
 }
 .footer__list-item {
+  margin-right: 30px;
   font-size: 14px;
   line-height: 27px;
-  text-align: right;
 
   color: #455880;
+}
+.footer__list-item.footer__list-item::last-child {
+  margin-right: 110px;
 }
